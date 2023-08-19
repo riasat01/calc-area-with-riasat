@@ -1,1 +1,0 @@
-"# calc-area-with-riasat" 

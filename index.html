@@ -50,7 +50,7 @@
                         <span>cm</span>
                     </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button id="triangle" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -62,12 +62,14 @@
                 <div class="card-body">
                     <h2 class="card-title">Rectangle</h2>
                     <p>Area [A] = w X h</p>
-                    <input class="inline" type="text" name="" id="" placeholder="w">
-                    <span class="inline">cm</span>
-                    <input class="inline" type="text" name="" id="" placeholder="l">
-                    <span>cm</span>
+                    <div class="flex justify-evenly items-center">
+                        <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="w">
+                        <span>cm</span>
+                        <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="l">
+                        <span>cm</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button id="rectangle" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -79,12 +81,14 @@
                 <div class="card-body">
                     <h2 class="card-title">Parallelogram</h2>
                     <p>Area [A] = b X h</p>
-                    <input class="inline" type="text" name="" id="" placeholder="b">
-                    <span class="inline">cm</span>
-                    <input class="inline" type="text" name="" id="" placeholder="h">
+                    <div class="flex justify-evenly items-center">
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="b">
                     <span>cm</span>
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="h">
+                    <span>cm</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button id="parallelogram" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -96,12 +100,14 @@
                 <div class="card-body">
                     <h2 class="card-title">Rhombus</h2>
                     <p>Area [A] = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
-                    <input class="inline" type="text" name="" id="" placeholder="d1">
-                    <span class="inline">cm</span>
-                    <input class="inline" type="text" name="" id="" placeholder="d2">
+                    <div class="flex justify-evenly items-center">
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="d1">
                     <span>cm</span>
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="d2">
+                    <span>cm</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button id="rhombus" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -113,12 +119,14 @@
                 <div class="card-body">
                     <h2 class="card-title">Pentagon</h2>
                     <p>Area [A] = 0.5 X p X d</p>
-                    <input class="inline" type="text" name="" id="" placeholder="p">
-                    <span class="inline">cm</span>
-                    <input class="inline" type="text" name="" id="" placeholder="d">
+                    <div class="flex justify-evenly items-center">
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="p">
                     <span>cm</span>
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="d">
+                    <span>cm</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button id="pentagon" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -130,24 +138,28 @@
                 <div class="card-body">
                     <h2 class="card-title">Ellipse</h2>
                     <p>Area [A] = pi X a X b</p>
-                    <input class="inline" type="text" name="" id="" placeholder="a">
-                    <span class="inline">cm</span>
-                    <input class="inline" type="text" name="" id="" placeholder="b">
+                    <div class="flex justify-evenly items-center">
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="a">
                     <span>cm</span>
+                    <input class="w-16 bg-slate-300 px-3 py-2 rounded-lg" type="text" name="" id="" placeholder="b">
+                    <span>cm</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button id="ellipse" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="card bg-base-100 shadow-xl min-h-screen">
-                <div class="card-body">
-                    <h2 class="card-title underline">Area Calculation</h2>
+                <div id="result" class="">
+                    <h2 class="card-title underline px-8 py-3">Area Calculation</h2>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="./js/sccript.js"></script>
 </body>
 
 </html>
